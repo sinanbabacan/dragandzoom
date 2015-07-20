@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>HOME</title>
+    <script type="text/javascript" src="dragandzoom.js"></script>
+    <style media="screen">
+      img {
+        display: block;
+        float: left;
+      }
+      img._1x1{
+        width: 100;
+        height: 100;
+      }
+      img._2x2{
+        width: 200;
+        height: 200;
+      }
+      img._4x2{
+        width: 400;
+        height: 200;
+      }
+      img._2x1{
+        width: 200px;
+        height: 100px;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div style="margin:0 auto;width:600px;">
+      <img class='zoom _4x2' src='amilli.jpg'/>
+      <img class='zoom _2x2' src='arda.jpg' />
+    </div>
+
+  <script>
+    dragandzoom(document.querySelectorAll('img.zoom'),{ zoom_ratio:0.05, wheel_zoom: true});
+	</script>
+
+  </body>
+</html>
