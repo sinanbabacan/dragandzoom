@@ -32,7 +32,7 @@ window.dragandzoom = (function(){
       updateBackgroundImage();
     }
 
-    function priventAction(x, y){
+    function preventAction(x, y){
       var result = false;
 
       if (px > x) {
@@ -64,7 +64,7 @@ window.dragandzoom = (function(){
       var cursor_x = e.pageX - img.getBoundingClientRect().left - document.body.scrollLeft;
       var cursor_y = e.pageY - img.getBoundingClientRect().top - document.body.scrollTop;
 
-      if(priventAction(cursor_x, cursor_y)){
+      if(preventAction(cursor_x, cursor_y)){
         return;
       }
 
@@ -98,7 +98,7 @@ window.dragandzoom = (function(){
       down_px = px;
       down_py = py;
 
-      if(priventAction(down_cursor_x, down_cursor_y)){
+      if(preventAction(down_cursor_x, down_cursor_y)){
         return;
       }
 
