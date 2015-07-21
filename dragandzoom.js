@@ -7,6 +7,7 @@ window.dragandzoom = (function(){
         wheel_zoom: true
     	};
 
+    options = options || {};
     var settings = {};
     
     Object.keys(defaults).forEach(function(key){
