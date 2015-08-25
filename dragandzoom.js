@@ -21,8 +21,8 @@ window.dragandzoom = (function(){
 
     function onMousemove(e){
 
-      var fx = e.x - img.getBoundingClientRect().left - document.body.scrollLeft;
-      var fy = e.y - img.getBoundingClientRect().top - document.body.scrollTop;
+      var fx = e.x - img.getBoundingClientRect().left;
+      var fy = e.y - img.getBoundingClientRect().top;
 
       var dif_x = fx - down_cursor_x;
       var dif_y = fy - down_cursor_y;
@@ -94,8 +94,8 @@ window.dragandzoom = (function(){
     function onMousedown(e){
       e.preventDefault();
 
-      down_cursor_x = e.x - img.getBoundingClientRect().left - document.body.scrollLeft;
-      down_cursor_y = e.y - img.getBoundingClientRect().top - document.body.scrollTop;
+      down_cursor_x = e.x - img.getBoundingClientRect().left;
+      down_cursor_y = e.y - img.getBoundingClientRect().top;
       down_px = px;
       down_py = py;
 
